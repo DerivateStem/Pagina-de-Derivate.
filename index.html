@@ -6,14 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Derivate.stem</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mediaqueries.css">
 
 </head>
 <body>
     <header class="header">
-        <nav class="header__menu">
+        <!-- <nav class="header__menu">
             <a class="header__menu__link" href="index.html">Home</a>
             <a class="header__menu__link" href="about_1.html">Entre físicos 2024</a>
             <a class="header__menu__link" href="about_2.html">Entre físicos 2023</a>
+        </nav> -->
+
+        <nav id="desktop-nav">
+            <div class="logo"><a href="./index.html" class="nav-link">Derivate</a></div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="about_1.html" class="nav-link">Entre Físicos 2024</a></li>
+                    <li><a href="about_2.html" class="nav-link">Entre Físicos 2023</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo"><a href="./index.html">Derivate</a></div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="about_1.html" onclick="toggleMenu()">Entre físicos 2024</a></li>
+                    <li><a href="about_2.html" onclick="toggleMenu()">Entre físicos 2023</a></li>
+                </div>
+            </div>
         </nav>
     </header>
     <main class="presentacion">
@@ -49,5 +75,6 @@
     <footer class="footer">
         <p>Desarrollado por Jairo Nuñez Diestra</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
